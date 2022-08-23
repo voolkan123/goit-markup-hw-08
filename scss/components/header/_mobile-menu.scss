@@ -13,7 +13,6 @@
     
 }
 
-
 .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
@@ -44,7 +43,7 @@ padding-bottom: 48px;
 }
 
 .mobile-menu__list-item:last-child {
-    margin-bottom: 302px;
+    margin-bottom: 151px ;
 }
 
 .mobile-menu__link {
@@ -61,7 +60,7 @@ margin-bottom: 32px;
 }
 
 .mobile-menu__contacts-item:last-child {
-    margin-bottom: 64px;
+   margin-bottom: 64px;
 }
 
 
@@ -97,6 +96,7 @@ color: var(--acsent-logo-color);
 }
 
 .menu-mobile__social-link-current::after {
+content: '';
 width: 22px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 transform: rotate(90deg);
