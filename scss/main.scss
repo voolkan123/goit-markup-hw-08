@@ -1,36 +1,42 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 
 @import './base/base';
-@import './base/sectoin';
-@import './base/container';
-
-@import './components/header/page-header';
-@import './components/header/logo';
-@import './components/header/navigatoin';
-@import './components/header/сontacts';
-@import './components/header/mobile-menu';
-
-@import './components/main-studio/hero';
-@import './components/main-studio/how-we-are-working';
-@import './components/main-studio/whatwedo';
-@import './components/main-studio/team';
-@import './components/main-studio/clients';
-
-@import './components/main-porfolio/portfolio-container';
-@import './components/main-porfolio/products-button';
-@import './components/main-porfolio/products';
-@import './components/main-porfolio/overlay';
+@import './base/reset';
 
 
-@import './components/footer/footer-page';
-@import './components/footer/footer-logo';
-@import './components/footer/footer_contacts';
-@import './components/footer/footer-add.scss';
-@import './components/footer/form-footer';
-
-
+@import './components/agreement';
 @import './components/backdrop';
-@import './components/modal-window';
+@import './components/card-set';
+@import './components/container';
+@import './components/logo';
+@import './components/button';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/nav';
+@import './components/overlay';
+@import './components/product-btn';
+@import './components/section';
+@import './components/social';
+@import './components/title';
 @import './components/modal-form';
+
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/product';
+@import './layouts/footer';
+
+
+
+
+
+
+
 

@@ -1,0 +1,38 @@
+.clients {
+    
+    &__list {
+        display: flex;
+        --card-item: 2;
+
+        @include mq(tab) {
+            --card-item: 3;
+        }
+
+        @include mq(desk) {
+            --card-item: 6;
+        }
+    }
+
+    &__link {
+        display: flex;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+
+        height: 92px;
+        align-items: center;
+        justify-content: center;
+        color: var(--items-color);
+
+        transition: color var(--animation);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+
+    }
+}

@@ -1,0 +1,35 @@
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+
+    background-color: var(--text-color-grey);
+
+    @include mq(desk) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    &__title {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.61;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(---text-color-white);
+            max-width: 360px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+
+            @include mq(desk) {
+                font-size: 44px;
+                line-height: 1.36;
+                max-width: 696px;
+            }
+        }
+    
+    &__btn {
+            margin: 0 auto;
+        }
+}

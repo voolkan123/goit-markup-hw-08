@@ -1,0 +1,57 @@
+
+
+
+.modal {
+    position: absolute;
+    max-height: 609px;
+    top: 10%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%) scale(1);
+    transition: transform var(--animation), visibility var(--animation);
+    background-color: var(--bg-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  @media screen and (min-width: 480px) {
+    .modal {
+      max-width: 450px;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .modal {
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .modal {
+      max-width: 528px;
+      max-height: 581px;
+    }
+  }
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-icon-btn {
+    transition: fill var(--transition);
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+    fill: var(- --accent-color);
+}
+}
+

@@ -1,0 +1,156 @@
+
+.header {
+    // font-weight: 500;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+    position: relative;
+
+    border-bottom: 1px solid var(--border-cl);
+
+    // &__container {
+    //         display: flex;
+    //         align-items: center;
+    //     }
+
+    &__mobile {
+        @include mq(mob-only) {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }    
+
+    &__contact-list {
+        display: flex;
+
+        @include mq(mob-only) {
+            // margin-bottom: 64px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 32px;
+            margin-top: auto;
+        }
+
+        @include mq(tab-only) {
+           
+           flex-direction: column;
+           gap: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            margin-left: auto;
+           
+        }
+
+        // @include mq(desk) {
+        //     display: flex;
+        //     gap: 50px;
+        //     margin-left: auto;
+        //     font-size: 14px;
+        //     line-height: calc(16 / 14);
+        //     align-items: center;
+        // }
+            // display: flex;
+            // align-items: center;
+            // gap: 50px;
+            // margin-left: auto;
+                }
+
+    &__item:first-child {
+
+        @include mq(mob-only) {
+            margin-bottom: 32px;
+            font-size: 34px;
+            line-height: calc(40 / 34);
+        }
+
+        @include mq(tab-only) {
+            margin-bottom: 10px;
+        }
+    }            
+     
+    &__contact-item:last-child {
+
+        @include mq(desk) {
+            margin-left: 50px;
+        }
+
+        // @include mq(mob-only) {
+        //     font-size: 24px;
+        //     line-height: calc(28 / 24);
+        // }
+    }
+
+    &__contact-link {
+           
+        display: inline-flex;
+        align-items: center;
+        color: var(--grey-text-cl);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+         
+        transition: color var(--animation);
+
+            // @include mq(tab-only) {
+            //     display: flex;
+            //     align-items: center;
+            //     gap: 8px;
+            // }
+
+            @include mq(tab) {
+                font-size: 12px;
+            }
+
+            @include mq(desk) {
+
+                font-size: 16px;
+
+                // display: flex;
+                // position: relative;
+                // align-items: center;
+                // padding-top: 32px;
+                // padding-bottom: 32px;
+            }
+                }
+        
+        
+    &__logo {
+            margin-right: 93px;
+                }
+        
+    &__contact-link:hover,
+    &__contact-link:focus {
+            color: var(--accent-cl);
+                }
+        
+    &__icon {
+
+            display: none;
+
+        @include mq(tab) {
+
+            display: block;
+             margin-right: 10px;
+            fill: currentColor;
+            }
+
+                }
+}
+
+// .menu {
+//     @include mq(mob-only) {
+//         display: none;
+//     }
+// }
+
+.header--flex {
+    @include mq(tab) {
+        display: flex;
+        align-items: center;
+    }
+}
+

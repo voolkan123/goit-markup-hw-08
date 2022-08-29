@@ -1,0 +1,33 @@
+.about {
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @include mq(mob-only) {
+                text-align: center;
+            }
+        }
+    
+        &__thumb {
+            display: flex;
+            background-color: var(--bg-color-grey);
+            border-radius: 4px;
+            margin-bottom: 30px;
+    
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mq(tab) {
+            --card-item: 2;
+        }
+
+        @include mq(desk) {
+            --card-item: 4;
+        }
+}
