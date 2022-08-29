@@ -455,7 +455,7 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--hero-gradient), url(../images/bgall/bg-desktop@1x.png);
+  background-image: var(--hero-gradient), url(/images/bgall/bg-desktop@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
